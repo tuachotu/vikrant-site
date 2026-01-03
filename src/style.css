@@ -1,0 +1,173 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.site-wrapper {
+  position: relative;
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  gap: 3rem;
+}
+
+.sidebar {
+  flex: 0 0 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.content {
+  flex: 1;
+  max-width: 650px;
+}
+
+/* .profile-grid is no longer used, kept for clean diff or removed */
+
+.profile-content {
+  display: block;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.profile-image {
+  float: right;
+  width: 240px;
+  margin-left: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.profile-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.social-links li {
+  margin-bottom: 0;
+}
+
+/* Sidebar Menu Styles */
+summary {
+  cursor: pointer;
+  list-style: none;
+  /* Hide default triangle */
+  color: #2563eb;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+  /* Hide triangle in WebKit */
+}
+
+summary::after {
+  content: '▶';
+  font-size: 0.7em;
+  transition: transform 0.2s;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+summary:hover {
+  text-decoration: underline;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.95em;
+  border-left: 2px solid #eee;
+  padding-left: 0.8rem;
+}
+
+.submenu a {
+  margin-bottom: 0.4rem;
+  color: #444;
+}
+
+.submenu a:hover {
+  color: #2563eb;
+}
+
+.submenu.nested {
+  margin-top: 0.2rem;
+  border-left: 2px solid #ddd;
+  padding-left: 0.8rem;
+}
+
+.journey-links {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 0.4rem;
+}
+
+.journey-links a {
+  margin-right: 0.2rem;
+}
+
+@media (max-width: 600px) {
+  .site-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar {
+    flex-basis: auto;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 0;
+  }
+
+  .profile-grid {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .profile-image {
+    flex-basis: auto;
+    width: 150px;
+    margin: 0 auto;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

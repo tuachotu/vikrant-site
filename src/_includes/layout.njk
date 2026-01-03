@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/style.css' | url }}">
+</head>
+<body>
+  <div class="site-wrapper">
+    <ul class="social-links">
+      <li><a href="https://www.linkedin.com/in/vkrntsngh/">LinkedIn</a></li>
+      <li><a href="https://x.com/vikkrraant">Twitter</a></li>
+      <li><a href="https://github.com/tuachotu/">GitHub</a></li>
+      <li><a href="https://vikkrraant.medium.com/">Blog</a></li>
+    </ul>
+    <nav class="sidebar">
+      <details>
+        <summary>Personal Projects</summary>
+        <div class="submenu">
+          <details>
+            <summary title="an iPhone app to show you how a dog might see the world">Pawvision</summary>
+            <div class="submenu nested">
+              <a href="https://apps.apple.com/us/app/pawvision/id6746367830">download app</a>
+              <a href="https://github.com/tuachotu/pawvision">Code Repo</a>
+              <div class="journey-links">
+                <span>journey - </span>
+                <a href="https://vikkrraant.medium.com/building-dogstagram-with-a-wise-old-librarian-aka-chatgpt-part-1-the-beginning-1547a36425a1">1</a>, 
+                <a href="https://vikkrraant.medium.com/building-dogstagram-with-a-wise-old-librarian-part-2-through-the-eyes-of-a-dog-03e62a13e2cb">2</a>, 
+                <a href="https://vikkrraant.medium.com/building-dogstagram-with-a-wise-old-librarian-part-3-from-dogstagram-to-pawvision-its-alive-42a4a7ed2da4">3</a>
+              </div>
+            </div>
+          </details>
+          <details>
+            <summary>Work Bench</summary>
+            <div class="submenu nested">
+              <a href="https://www.work-bench.dev/">default</a>
+              <a href="https://www.work-bench.dev/notebook">notebook</a>
+              <a href="https://github.com/tuachotu/work-bench">Code Repo</a>
+            </div>
+          </details>
+          <a href="https://cybersuper.io/">Cyber Super</a>
+          <details>
+            <summary>Home Pro</summary>
+            <div class="submenu nested">
+              <a href="https://home-pro.tech/">Homepage</a>
+              <a href="https://github.com/tuachotu/homepro-backend-scala">Backend</a>
+              <a href="https://github.com/tuachotu/home-pro-db-schema">DB Schema</a>
+              <a href="https://vikrant.info/home-pro-api-docs.html">Api Doc</a>
+              <a href="https://github.com/tuachotu/homeProWebiste">Website</a>
+              <a href="https://github.com/tuachotu/HomrProPostmanCollection">Postman</a>
+              <a href="https://vikrant.info/homepro-docs/">Runbooks</a>
+            </div>
+          </details>
+        </div>
+      </details>
+      <details>
+        <summary>Companies I worked for</summary>
+        <div class="submenu">
+          <a href="https://www.autodesk.com/">Autodesk (current)</a>
+          <a href="https://about.meta.com/">Meta</a>
+          <a href="https://gomotive.com/">Motive</a>
+          <a href="https://www.yahoo.com/">Yahoo</a>
+          <a href="https://www.hp.com/">HP</a>
+          <a href="https://www.amd.com/">AMD</a>
+          <a href="https://www.quark.com/">Quark</a>
+        </div>
+      </details>
+    </nav>
+    <main class="content">
+      {{ content | safe }}
+    </main>
+  </div>
+</body>
+</html>
